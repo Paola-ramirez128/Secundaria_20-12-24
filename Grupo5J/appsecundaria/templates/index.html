@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+    <title>Ramirez jaja</title>
+</head>
+<body>
+    <h1>Hola mundo cruel</h1>
+    <h1>Paola Ramirez</h1>
+    <HR>
+
+        {% for i in misalumnos %}
+        <li> {{i.Nombre}} </li>
+        {% endfor %}
+    </HR>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
